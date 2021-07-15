@@ -4,36 +4,40 @@ are specified here. I don't believe there are any declarations that need to be m
 Note (to self?): saving your file as a .css FIRST and then opening it in your editor should
 give you auto-fill/completion that will make coding a lot faster. :D */ 
 
+
+
+/* I will need to check the above statement, * is applies to all 
+of an HTML script. Border box makes sizing your padding, margins...boxes a lot easier. */
 *{
 	box-sizing: border-box;
 }
 
-/* I will need to check the above statement, * is applies to all 
-of an HTML script. Border box makes sizing your padding, margins...boxes a lot easier. */
-
 h1 {
-	margin-bottom:15px;
+	text-align: center;
+	padding: 10px;
 }
 
 /* Heading 1 entries should have a margin at the bottom, note:  they 
 collapse with the margin-top (I believe); */ 
+
+div#container {
+	background-color: #34495E;
+	position: relative;
+	padding: 1em;
+}
 
 p{
 	border: 1px	solid black ;
 	background-color: #D3D3D3;
 	width:  90%;
 	height: 150px;
-	margin-right: auto;
 	margin-left: auto;
-	font-family: Garamond;
+	margin-right: auto;
+	font-family: Garamond;	
 	color: black;
 }
 
-div#container {
-	background-color: #00FFFF;
-	position: relative;
-	top: 60px;
-}
+
 /* this will function as a background. block-element. */
 
 
