@@ -10,14 +10,16 @@ remember to use position: absolute as well as specify
 -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 <!-- declare html designation, for browser to know how to  interpret script, head is to specify properties for metadata. -->
 
 <meta charset="utf-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- character set used, important for compatibility with browsers -->
+<!-- character set used, important for compatibility with browsers and old IE8. prevents some devices from automatically zooming out too much when viewing page. -->
 
 <title> HTML, CSS and JS Coursera: Week 1 and 2 Summary  </title>
 
@@ -34,10 +36,10 @@ remember to use position: absolute as well as specify
 <h1> TEST </h1>
 <!-- heading -->
 
-<div id="container">
-	<p> one </p>
-	<p> two </p>
-	<p> three </p>
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-12"><p>Item 1</p></div>
+  <div class="col-lg-4 col-md-6 col-sm-12"><p>Item 2</p></div>
+  <div class="col-lg-4 col-md-6 col-sm-12"><p>Item 3</p></div>
 </div> 
 
 
