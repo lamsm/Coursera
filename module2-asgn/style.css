@@ -12,9 +12,17 @@ of an HTML script. Border box makes sizing your padding, margins...boxes a lot e
 	box-sizing: border-box;
 }
 
+a:hover {
+  background-color: lightgoldenrodyellow;
+  color: palevioletred;
+  font-size: 5em;
+}
+
+
 h1 {
 	text-align: center;
 	margin: 50px;
+	font-size: 1.75em;
 	/* remember margin gives space outside, while padding gives space 
 	inside border */
 }
@@ -23,6 +31,7 @@ h1 {
 collapse with the margin-top (I believe); */ 
 
 p{
+	position: relative;
 	border: 1px	solid black ;
 	background-color: #D3D3D3;
 	width:  90%;
@@ -31,7 +40,92 @@ p{
 	margin-right: auto;
 	font-family: Garamond;	
 	color: black;
+	text-align: justify;
+	padding: 1px;
 }
+
+.boxtitle {
+	position: relative;
+	border: 1px	solid black ;
+	background-color: lightseagreen;
+	width: fit-content;
+	max-width: 70%;
+	word-wrap: break-word;
+	height: fit-content;
+	max-height: 1.5em;
+	overflow: auto;
+	font-family: Garamond;	
+	color: black;
+	padding: 1px;
+	margin-right: 1px;
+	margin-left: auto;
+	font-size: 1.25em;
+}
+
+.boxtitle1 {
+	position: relative;
+	border: 1px	solid black ;
+	background-color: lightyellow;
+	width: fit-content;
+	max-width: 70%;
+	word-wrap: break-word;
+	height: fit-content;
+	max-height: 1.5em;
+	overflow: auto;
+	font-family: Garamond;	
+	color: black;
+	padding: 1px;
+	margin-right: 1px;
+	margin-left: auto;
+	font-size: 1.25em;
+}
+
+.boxtitle2 {
+	position: relative;
+	border: 1px	solid black ;
+	background-color: palevioletred;
+	width: fit-content;
+	max-width: 70%;
+	word-wrap: break-word;
+	height: fit-content;
+	max-height: 1.5em;
+	overflow: auto;
+	font-family: Garamond;	
+	color: black;
+	padding: 1px;
+	margin-right: 1px;
+	margin-left: auto;
+	font-size: 1.25em;
+}
+/* .boxtitle is a block element that will take up the first line, 
+text-align "right" doesn't do anything. margin-left auto shifts margin
+to the left. 1 px for a bit of a gap. fit width and height for title text. 
+
+over various trials, realized I needed to put the title as the first element under the div class columns
+then the element "p" AFTER, since its going to go under. Reverse order wouldnt work, or at 
+least I couldn't figure it out. 
+
+word wrap:  break word allows large titles to break and fit into the box specifications;
+
+alternatively, could add a max height and overflow property, added afterwards.
+*/
+
+
+/* .boxheader {
+	border: 1px	solid black ;
+	background-color: #D3D3D3;
+	width:  90%;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Garamond;	
+	color: black;
+	text-align: right;
+}
+
+The above is one workaround for a right-aligned title for each box.
+I will be attempting to use positioning attributes to work it out.
+*/ 
 
 /* A bunch of specifications for properties of paragraphs, property name
 and functions are self-explanatory. */
@@ -41,7 +135,7 @@ Here I am trying to get the size of the browser window to scale
 and adjust to the the size of the browser/device width. 
 */
 
-.row{
+.row {
 	width: 100%;
 }
 
@@ -54,7 +148,7 @@ SPECIFYING COLUMN WIDTHS */
 @media (min-width: 992px) {
 	.col-lg-1,.col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, 
 	.col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, 
-	.col-lg-11, .col-lg-12, {
+	.col-lg-11, .col-lg-12 {
 	float: left;
 	border: 1px solid black;
 }
@@ -102,7 +196,7 @@ page will be split into 12 horizontally stacking columns of equal size with a 1p
 @media (min-width: 768px) and (max-width: 991px)  {
 	.col-md-1,.col-md-2, .col-md-3, .col-md-4, .col-md-5, 
 	.col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, 
-	.col-md-11, .col-md-12, {
+	.col-md-11, .col-md-12 {
 	float: left;
 	border: 1px solid black;
 }
@@ -152,7 +246,7 @@ determine by # of pixels. */
 @media (max-width: 767px)  {
 	.col-sm-1,.col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, 
 	.col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, 
-	.col-sm-11, .col-sm-12, {
+	.col-sm-11, .col-sm-12 {
 	float: left;
 	border: 1px solid black;
 }
