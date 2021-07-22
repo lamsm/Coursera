@@ -1,0 +1,25 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #01070E;
+	background: #CCCCFF;
+}
+
+header { 
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+ }
+
+
+#header-nav {
+	background-color:#9AA0A7 ;
+	border-radius: 0;
+	border: 1;
+	border-color: #81868D ;
+}
+
+/* above is an ID, defined using #. Make a rectangular header, no rounded edges and 
+no coloured border. */
+
+.navbar-brand {
+	color: black;
+}
