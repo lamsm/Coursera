@@ -1,0 +1,90 @@
+<!-- practicing with bootstrap v3.3.6 minified, so class names will be different -->
+
+<!doctype html>
+<html lang="en">
+	<head>
+	<title> I don't know what I'm doing... </title>
+		
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Above suggests to browser they should use latest version -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- just making declarations, making sure things are compatible -->
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!--2 style sheets declared, one to pull from bootstrap, ours is pulled 
+		after in case I want to specify some parameters or make some edits -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+		<!-- ^ did some font shopping --> 
+
+	</head>
+
+<body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="https://en.meming.world/wiki/Surprised_Pikachu" class="pull-left visible-md visible-lg" target="_blank">
+						<div id="logo-img" alt="Surprised Pikachu Meme"></div>
+					</a>	
+
+							<!-- nav stretches to edges of browser, the div inside, specified as container-class, doesn't 
+
+		inside of the div container class, we have a new div, block element, with a new class we will refer to in our style sheet. 
+
+		inside of the container, we have a navbar-header, and inside of that we have a clickable element...inside of that clickable element we have a logo image. Thats the medium that will be clickable. I have styled it in the sheet.
+
+		-->
+
+					<div class="navbar-brand">		
+						
+							<h1>Bootstrap v3.3.6: I have no idea what I'm doing...</h1>
+							
+							<p>
+							<span>Contemplating my decision to learn website programming</span>
+							<a href="https://en.meming.world/wiki/This_Is_Fine" target="_blank" >
+							<img src="this_is_fine.jpg" alt="This Is Fine meme">
+							</p>
+							</a>
+					</div>
+
+					<!-- made another div, showed up beside the icon because we floated left the navbar-header stuff. styled it a bit. -->
+
+
+					 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseable-nav" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			      	</button>
+
+			      	<!-- making use of javascript in some of these classes, i.e. collapse, aria is for screen-reader. sr = screen reader only 
+			      		span icon bar makes those lines in navigation. collapsable-nav
+			      		refers to an id that we will write out, it will include all the navigation menus.--> 
+
+				</div>
+			</div>
+		</nav>
+
+	</header>
+
+
+	<h2>Hello Coursera. I, i, L, l</h2>
+
+		<p>Testing fonts H <- you can see this one is sans-serif, not tapered at the end. I, i, L, l. I personally prefer serif fonts because its slightly easier to differentiate capital i's and lowercase L's. </p>
+
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+		<!-- ^ refer to these scripts for Javascript (behaviour) classes, as I'm writing this, I haven't yet learned js. Referenced in this order for the same reasons as above with the style sheets. -->
+
+		<!-- Note to self: WHY IS THE REFERENCE TO JS WRITTEN IN THE BODY RATHER THAN THE HEAD? Google it or ask someone later -->  
+
+
+</body>

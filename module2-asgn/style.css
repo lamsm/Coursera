@@ -16,7 +16,10 @@ a:hover {
   background-color: lightgoldenrodyellow;
   color: palevioletred;
   font-size: 5em;
-}
+ 
+/* just for fun, need to figure out how to limit size of font when hovering later */
+
+ }
 
 
 h1 {
