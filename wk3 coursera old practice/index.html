@@ -30,7 +30,7 @@
 		<nav id="header-nav" class="navbar navbar-default">
 			<div class="container">
 				<div class="navbar-header">
-					<a href="https://en.meming.world/wiki/Surprised_Pikachu" class="pull-left visible-md visible-lg" target="_blank">
+					<a href="https://en.meming.world/wiki/Surprised_Pikachu" class="pull-left hidden-xs" target="_blank">
 						<div id="logo-img" alt="Surprised Pikachu Meme"></div>
 					</a>	
 
@@ -47,9 +47,9 @@
 							<h1>Bootstrap v3.3.6: I have no idea what I'm doing...</h1>
 							
 							<p>
-							<span>Contemplating my decision to learn website programming</span>
+							<span>Contemplating my decision to learn website design</span>
 							<a href="https://en.meming.world/wiki/This_Is_Fine" target="_blank" >
-							<img src="this_is_fine.jpg" alt="This Is Fine meme">
+							<img src="this_is_fine.jpg" alt="This Is Fine meme" class="hidden-xs">
 							</p>
 							</a>
 					</div>
@@ -57,7 +57,7 @@
 					<!-- made another div, showed up beside the icon because we floated left the navbar-header stuff. styled it a bit. -->
 
 
-					 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseable-nav" aria-expanded="false">
+					 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsible-nav" aria-expanded="false">
 				        <span class="sr-only">Toggle navigation</span>
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
@@ -67,6 +67,39 @@
 			      	<!-- making use of javascript in some of these classes, i.e. collapse, aria is for screen-reader. sr = screen reader only 
 			      		span icon bar makes those lines in navigation. collapsable-nav
 			      		refers to an id that we will write out, it will include all the navigation menus.--> 
+
+				</div>
+
+				<div id="collapsible-nav" class="collapse navbar-collapse">
+				
+				<!-- container div ^ -->
+
+				<!-- referring back to the button, data-target and data-toggle are key-value attributes that will be interpreted by the .js script. Need to study these later. Note id collapsible nav --> 
+
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+
+					<!-- menu items organized using ul and ol, id is assigned (nav-list) so we can target it in our css script. classes attach this list to the navbar. navbar-right, pull right. --> 
+						<li>
+							<a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers">
+									<span class="glyphicon glyphicon-send"></span><br class="hidden-xs"> <span>Coursera</span></a>
+						</li>
+
+						<li>
+			              <a href="https://getbootstrap.com/docs/3.3/components/#navbar">
+			                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> <span>Resource 1</span></a>
+			            </li>
+
+			            <li>
+			              <a href="https://www.google.com/">
+			                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> <span>Resource 2</span></a>
+			            </li>
+
+			            <li id="phone" class="hidden-xs">
+			              <a href="tel:1-877-369-4224">
+			                <span>1-877-369-4224</span></a><div>Water is good for you.</div>
+			            </li>
+
+
 
 				</div>
 			</div>
