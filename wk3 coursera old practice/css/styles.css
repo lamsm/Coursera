@@ -1,6 +1,6 @@
 body {
 	font-family: 'Open Sans', sans-serif;
-	color: ##081D21;
+	color: #081D21;
 	background: #CCCCFF;
 	font-size: 14px;
 }
@@ -35,7 +35,7 @@ no coloured border. */
 	float: left;
 }
 
-img {
+.navbar-brand img {
 	border-radius: 40%;
 }
 
@@ -130,7 +130,40 @@ added nav bar icon border colors */
 
 /* responsive design ^ , fixing navbar toggle below */
 
+@media (min-width: 1200px) {
+	.jumbotron {
+		background: url('../images/Waldo-1280x853.jpeg') no-repeat;
+		height: 853px;
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px solid #3F0C1F;
+	}
+}
 
+@media (min-width: 992px) and (max-width: 1199px) {
+
+		.jumbotron {
+		background: url('../images/Waldo-960x960.jpg') no-repeat;
+		height: 960px;
+		width: 960px;
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px solid #3F0C1F;
+		;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	.jumbotron {
+		background: url('../images/Waldo-640x640.jpg') no-repeat;
+		height: 640px;
+		width: auto;
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px solid #3F0C1F;
+		background-size: cover;
+		background-position: center;
+	}
+	
+}
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
@@ -158,10 +191,12 @@ added nav bar icon border colors */
     margin-right: .6em;
   }
 
-  .container {
-  	margin-left: 5px;
-  }
-
+	.container .jumbotron {
+		border-radius: 0px;
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px solid #3F0C1F;
+		margin-top: 30px;
+		padding: 0px;
 }
 
 .navbar-toggle {
@@ -178,3 +213,31 @@ added nav bar icon border colors */
 		margin-top: -20px;
 	}
 } 
+
+.glyphicon {
+	margin-top: 2px;
+}
+
+/* below we specify css properties for a call button that is only visible
+when the screen is XS */  
+
+  #call-btn > a {
+    font-size: 1.2em;
+    display: block;
+    margin: 0 20px;
+    padding: 5px;
+    border: 2px solid #fff;
+    background-color: #F5CD65;
+    color:  #081D21;
+  }
+  #xs-deliver {
+    margin: 7px;
+    font-size: .9em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+  }
+
+.img-responsive {
+		background-size: cover;
+		background-position: center;
+}
