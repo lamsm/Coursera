@@ -248,6 +248,19 @@ when the screen is XS */
 		background-size: cover;
 		background-position: center;
 	}
+
+		.container .jumbotron {
+		margin-right: 2%;
+		margin-left: 2%;
+		width: auto;
+		}
+
+		#first-tile, #second-tile, #map-tile {
+			margin-right: 2%;
+			margin-left: 2%;
+			width: auto !important;
+		}
+
 }
 
 #first-tile, #second-tile, #map-tile {
