@@ -197,7 +197,7 @@ added nav bar icon border colors */
 		border: 2px solid #3F0C1F;
 		margin-top: 30px;
 		padding: 0px;
-}
+}}
 
 .navbar-toggle {
   position: relative;
@@ -237,7 +237,79 @@ when the screen is XS */
     text-transform: uppercase;
   }
 
-.img-responsive {
+@media (max-width: 767px) {
+
+  	.jumbotron {
+		background: url('../images/Waldo-640x640.jpg') no-repeat;
+		height: 640px;
+		width: auto;
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px solid #3F0C1F;
 		background-size: cover;
 		background-position: center;
+	}
+}
+
+#first-tile, #second-tile, #map-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+}
+
+#first-tile:hover, #second-tile:hover, #map-tile:hover {
+	box-shadow: 1px 3px 6px 3px #EFF578; 
+}
+
+#first-tile {
+	background: url(https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML/facebook-output.png) no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-color: dimgrey;
+	background-origin: content-box;
+	padding: 5px 0px 5px 50px;	
+}
+
+#second-tile {
+	background: url(https://upload.wikimedia.org/wikipedia/commons/a/a0/W3Schools_logo.svg) no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-color: whitesmoke;
+	background-origin: content-box;
+	padding: 10px;
+	padding-left: 50px;
+}
+
+#map-tile {
+	background: url("../mysterybox1.png") no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-origin: content-box;
+	padding-left: 20px;
+	background-color: white;
+}
+
+#map-tile:hover {
+	background: url("../mysterybox2.png") no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-origin: content-box;
+	padding-left: 20px;
+	background-color: white;
+}
+
+#first-tile span, #second-tile span, #map-tile span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+	width: auto;
+	text-align: left;
+	font-size: 1em;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
 }
