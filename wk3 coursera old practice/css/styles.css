@@ -255,7 +255,7 @@ when the screen is XS */
 		width: auto;
 		}
 
-		#first-tile, #second-tile, #map-tile {
+		#first-tile, #second-tile, #map-tile, #last-tile {
 			margin-right: 2%;
 			margin-left: 2%;
 			width: auto !important;
@@ -277,7 +277,7 @@ when the screen is XS */
 
 }
 
-#first-tile, #second-tile, #map-tile {
+#first-tile, #second-tile, #map-tile, #last-tile {
 	height: 250px;
 	width: 100%;
 	margin-bottom: 15px;
@@ -288,6 +288,10 @@ when the screen is XS */
 
 #first-tile:hover, #second-tile:hover, #map-tile:hover {
 	box-shadow: 1px 3px 6px 3px #EFF578; 
+}
+
+#last-tile:hover {
+	box-shadow: 5px 10px 18px red; 
 }
 
 #first-tile {
@@ -327,6 +331,24 @@ when the screen is XS */
 	background-color: white;
 }
 
+#last-tile {
+	background: url("../diary.png") no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-origin: content-box;
+	padding-left: 20px;
+	background-color: white;
+}
+
+#last-tile:hover {
+	background: url("../diary2.png") no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-origin: content-box;
+	padding-left: 20px;
+	background-color: white;
+}
+
 #first-tile span, #second-tile span, #map-tile span {
 	position: absolute;
 	top: 0;
@@ -336,6 +358,18 @@ when the screen is XS */
 	width: auto;
 	text-align: left;
 	font-size: 1em;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+
+#last-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
 	background-color: #000;
 	color: #fff;
 	opacity: .8;
@@ -375,4 +409,9 @@ when the screen is XS */
 
 #testimonials p:nth-child(2) {
 	margin-top: 25px;
+}
+
+#link1:hover, #link2:hover, #link3:hover, #Week1:hover, #Week2:hover, #link4:hover, #work1:hover {
+	background-color: yellow;
+	text-decoration: none;
 }
