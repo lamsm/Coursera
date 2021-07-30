@@ -1,3 +1,2 @@
-[Link](wk3%20coursera%20old%20practice/index.html)
-
+<a href="wk3 coursera old practice/index.html">Check out my work here!</a>
 
