@@ -274,6 +274,20 @@ when the screen is XS */
 			width: 50%;
 		}
 
+		.col-sm-5 {
+			margin-bottom: 20px;
+		}
+
+		h3.item-description-title {
+			text-align: center;
+		}
+
+		.item-details {
+			text-align: justify;
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+
 
 }
 
@@ -414,4 +428,90 @@ when the screen is XS */
 #link1:hover, #link2:hover, #link3:hover, #Week1:hover, #Week2:hover, #link4:hover, #work1:hover {
 	background-color: yellow;
 	text-decoration: none;
+}
+
+@media (max-width: 808px) {
+	#Week2 {
+		margin-left: 30px;
+		margin-right:  auto;
+	}
+
+	#wk4 {
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+	text-align: justify;
+}
+}
+
+.item-tile {
+	margin-bottom: 25px;
+}
+
+.item-tile hr {
+	width: 75%;
+}
+
+.item-tile .cost {
+	font-size: 0.8em;
+	text-align: left;
+	text-align: center;
+}
+
+.item-tile .cost span {
+	font-size: 1.3em;
+	font-style: italic;
+}
+
+.item-photo {
+	position: relative;
+	border: 2px solid #081D21;
+	overflow: hidden;
+	padding: 0;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	max-width: 215px;
+}
+
+.item-photo div {
+	position: absolute;
+	bottom: 1px;
+	right: 1px;
+	width: 70px;
+	background-color: #E5BF5B;
+	text-align: center;
+	border-radius: 9px;
+	line-height: .9;
+	border: 2px solid grey;
+
+}
+
+.descriptor {
+	margin-bottom: 40px;
+}
+
+.item-description {
+	padding-right: 10px;
+}
+
+h3.item-description-title {
+	margin: 0 0 10px;
+}
+
+.item-details {
+	font-size: .9em;
+	font-style: italic;
+}
+
+div #wk4end {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+}
+
+#wk4 {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
 }

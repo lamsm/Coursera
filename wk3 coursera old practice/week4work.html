@@ -1,0 +1,318 @@
+<!-- practicing with bootstrap v3.3.6 minified, so class names will be different -->
+
+<!doctype html>
+<html lang="en">
+	<head>
+	<title> I don't know what I'm doing... </title>
+		<style>
+			div > p {
+				margin-top: 20px; 
+			}
+
+			ol > li {
+				margin-top: 20px;
+
+			}
+			
+
+		</style>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Above suggests to browser they should use latest version -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- just making declarations, making sure things are compatible -->
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!--2 style sheets declared, one to pull from bootstrap, ours is pulled 
+		after in case I want to specify some parameters or make some edits -->
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+		<!-- ^ did some font shopping --> 
+
+	</head>
+
+<body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="https://en.meming.world/wiki/Surprised_Pikachu" class="pull-left hidden-xs" target="_blank">
+						<div id="logo-img" alt="Surprised Pikachu Meme"></div>
+					</a>	
+
+							<!-- nav stretches to edges of browser, the div inside, specified as container-class, doesn't 
+
+		inside of the div container class, we have a new div, block element, with a new class we will refer to in our style sheet. 
+
+		inside of the container, we have a navbar-header, and inside of that we have a clickable element...inside of that clickable element we have a logo image. Thats the medium that will be clickable. I have styled it in the sheet.
+
+		-->
+
+					<div class="navbar-brand">		
+						
+							<h1>Bootstrap v3.3.6: I have no idea what I'm doing...</h1>
+							
+							<p>
+							<span>Contemplating my decision to learn website design</span>
+							<a href="https://en.meming.world/wiki/This_Is_Fine" target="_blank" >
+							<img src="this_is_fine.jpg" alt="This Is Fine meme" class="hidden-xs">
+							</p>
+							</a>
+					</div>
+
+					<!-- made another div, showed up beside the icon because we floated left the navbar-header stuff. styled it a bit. -->
+
+
+					 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsible-nav" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			      	</button>
+
+			      	<!-- making use of javascript in some of these classes, i.e. collapse, aria is for screen-reader. sr = screen reader only 
+			      		span icon bar makes those lines in navigation. collapsable-nav
+			      		refers to an id that we will write out, it will include all the navigation menus.--> 
+
+				</div>
+
+				<div id="collapsible-nav" class="collapse navbar-collapse">
+				
+				<!-- container div ^ -->
+
+				<!-- referring back to the button, data-target and data-toggle are key-value attributes that will be interpreted by the .js script. Need to study these later. Note id collapsible nav --> 
+
+					<ul id="nav-list" class="nav navbar-nav navbar-right">
+
+					<!-- menu items organized using ul and ol, id is assigned (nav-list) so we can target it in our css script. classes attach this list to the navbar. navbar-right, pull right. --> 
+						<li>
+							<a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers">
+									<span class="glyphicon glyphicon-send"></span><br class="hidden-xs"> <span>Coursera</span></a>
+						</li>
+
+						<li>
+			              <a href="https://getbootstrap.com/docs/3.3/components/#navbar">
+			                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> <span>Resource 1</span></a>
+			            </li>
+
+			            <li>
+			              <a href="https://www.google.com/">
+			                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> <span>Resource 2</span></a>
+			            </li>
+
+			            <li id="phone" class="hidden-xs">
+			              <a href="tel:1-877-369-4224">
+			                <span>1.877.369.4224</span></a><div>Water is good for you.</div>
+			            </li>
+
+
+
+				</div>
+			</div>
+		</nav>
+
+	</header>
+
+	<div id="call-btn" class="visible-xs">
+		<a class="btn" href="tel:1-877-369-4224">
+		<span class="glyphicon glyphicon-earphone"></span>
+		1.877.369.4224 </a>
+	</div>
+
+<div id="xs-deliver" class="text-center visible-xs">Drink water!</div> 
+
+<div id="main-content" class="container">
+	
+		<h2 class="text-center"> Personal and Professional Goals: Summer 2021 </h2>
+			<div class="text-center descriptor"> Taking the single menu category project examined on Coursera, I have taken and modified it to reflect a 
+			different kind of menu. </div>
+
+	<section class="row">
+		<div class="item-tile col-md-6">
+			<div class="row">
+				<div class="col-sm-5">
+					<div class="item-photo">
+						<div>$2000+ CAD</div>
+						<img class="img-responsive" width="215" height="160" 
+						src="http://1.bp.blogspot.com/-VXfwUDsD87g/T_29ruJlPHI/AAAAAAAAAyI/goQUBtmaFrA/s1600/CELTA+logo.JPG">
+					</div>
+				<div class="cost">Time: <span> 4 - 12 weeks, 120 hrs </span><br>
+				</div>
+
+				</div>
+
+				<div class="item-description col-sm-7"> 
+					<h3 class="item-description-title"> Certificate in Teaching English to Speakers of Other Languages </h3>
+					<p class="item-details"> As both a Canadian teacher and a teacher looking to teach abroad, English language learning has always been a hot topic whereever I went. Learning up-to-date knowledge and research regarding language acquisition, various pedagogical approaches and experiences are all goals of mine when it comes to what I'd like to get out of a CELTA course. <br> <br> As you can see, it is a bit pricey compared other <i> TEFL (Teaching English as a Foreign Language) </i> certification courses. The reason for that is that this particular course possesses the "Cambridge" brand and represents a longstanding history of TEFL experience and research. This doesn't mean other TEFL courses cannot give you the same experience, but you'll have to do a bit more research. I won't go into all the nitty-gritty details, and instead provide this link: <a href="https://www.tesl.ca/" id="link1"> https://www.tesl.ca/</a>. <br><br>
+					As for what ended up happening to this option: it was a no-go. I decided that a face-to-face course would be more valuable for me, unfortunately those won't be available for a while. Also, the COVID situation, availability/course dates and uncertainty surrounding my job status (flying out or online) made things too complex. </p>
+				</div>
+			</div>
+			<hr class="visible-xs">
+		</div>
+
+	<div class="item-tile col-md-6">
+			<div class="row">
+				<div class="col-sm-5">
+					<div class="item-photo">
+						<div>$0 - 616 CAD</div>
+						<img class="img-responsive" width="215" height="160" 
+						src="https://thehill.com/sites/default/files/ca_thankyou_multilingual_language_istock.jpg">
+					</div>
+				<div class="cost">Hours/Weeks/Cost: <br><span> 20/8/$265 <br> 30/8/$295 <br>  40/8/$345 <br> 48/12/$616 </span>
+				</div>
+
+				</div>
+
+				<div class="item-description col-sm-7"> 
+					<h3 class="item-description-title"> Language Learning </h3>
+					<p class="item-details"> There are many resouces available for language learning, as a Chinese-Canadian, one of my personal lifelong goals is to familarize myself more with my supposedly native tongue. Along the way, I picked up an interest for learning Korean and Japanese as well due to similarities between these languages. The sounds of these languages are similar enough that sometimes speakers can pick up on particular vocabulary across languages, I hear this phenomenon often from learners of multiple Romance languages. <br> <br>
+					To the left, you'll see that I have broken down some courses that I have looked at (University of Calgary, August 2021). Of course there are also other alternatives to learning languages, ranging from private tutors, courses at smaller private institutions or self-study and textbook work (hence the inclusive $0 range). <br> <br>
+					In the end, the uncertainty of my ability to travel and teach at an international school in-person dissuaded me from "wasting" my time trying to pick it up so early. Don't get me wrong, any time invested into learning something always pays off. However, there is a <b>better</b> time and place for everything. Due to COVID, it has been difficult to meet up and practice any sort of language. I have tried online a few times, however it's not as immersive and feels artificial at times. If anything, language learning quickly becomes a chore of maintainance as opportunities for immersion and practice are few and far between. <br> <br> 
+					A long, long time ago, I spent some time in Korea as an exchange student. It was then I learned the importance of learning and preparing my language skills beforehand. 5 years later I learned from my mistakes as I prepared to go to Japan. It made a huge difference in terms of social opportunities. I look forward to when our current circumstances change. I'll be ready for then!
+
+
+					</p>
+				</div>
+			</div>
+			<hr class="visible-xs">
+		</div>
+
+	<div class="item-tile col-md-6">
+			<div class="row">
+				<div class="col-sm-5">
+					<div class="item-photo">
+						<div>$0 - ???</div>
+						<img class="img-responsive" width="215" height="160" 
+						src="https://www.pe.com/wp-content/uploads/2019/06/636337794-1.jpg?w=525">
+					</div>
+				<div class="cost">Time: <span> flexible </span><br> Cost: <span> varies (depends on coffeeshop budget) </span>
+				</div>
+
+				</div>
+
+				<div class="item-description col-sm-7"> 
+					<h3 class="item-description-title"> Professional School Exams </h3>
+					<p class="item-details"> You've probably heard of SATs, our local diploma exams, the MCAT, LSAT, GMAT and DAT exams as well as others. A professional and personal goal of mine is to attend professional school and do something with it (Law, Medicine, MBA, etc). <br><br>
+
+					There are various reasons for this: more professional autonomy, a higher income, more stimulating work and the ability to make a bigger impact. Growing up, I feel that I missed many opportunities due to factors such as financial difficulties, lack of social support and networking, as well as navigation (for example planning out my post-secondary studies). I've spent a lot of time in mentorship and teaching positions to help others overcome these obstacles as well. <br><br>
+
+					All-in-all, the game plan was to graduate and develop from professional school, work a meaningful and impactful career, secure financial independence and support my family, enjoy my life and explore personal interests, mentor and support others in their journey, then retire from that profession, pivot, and share some of my accrued experience as a teacher/professor. Over the years things haven't seem to go my way, but I'll remain steadfast.
+					</p>
+
+				</div>
+			</div>
+			<hr class="visible-xs">
+	</div>		
+
+	<div class="item-tile col-md-6">
+			<div class="row">
+				<div class="col-sm-5">
+					<div class="item-photo">
+						<div>$0 - ???</div>
+						<img class="img-responsive" width="215" height="160" 
+						src="https://p2.piqsels.com/preview/361/304/884/coding-technology-css-internet.jpg">
+					</div>
+				<div class="cost">Time: <span> flexible </span><br> Cost: <span> varies (depends on coffeeshop budget) </span>
+				</div>
+
+				</div>
+
+				<div class="item-description col-sm-7"> 
+					<h3 class="item-description-title"> Website Design </h3>
+					<p class="item-details"> During my post-secondary studies, I often envied engineers' ability to create amazing things and produce tangible results within the short-term. In contrast, my experience in biology showed me how persistent and tenacious researchers are as they pursued basic research over the long-term. What I had to show were negative results and lab reports, which didn't excite me as much as the robots and financial models I saw produced in other faculties. <br> <br>
+
+					I quickly realized that the instant gratification tag attributed to our generation certainly applied to me as well. This moved me to change and seek out a career in which I'd be able to help people and work with them, continuously learn and grow, as well as produce those short-term results. I had already thought this out as a child and wanted to try my hand at surgery, this post-secondary experience reaffirmed it. <br> <br>
+
+					Many of my friends and acquiantances work in software-dev, web-dev field, or some other computer-related fields. So coding and programming often pop up in our conversations. It struck me as an interesting, practical and relevant skill, so the idea of spending some time learning one or two things stuck in the back of my mind. 
+					</p>
+				</div>
+			</div>
+			<hr class="visible-xs">
+	</div>		
+
+</section>
+
+	<div id="wk4"> At the time of writing, it is August and I am halfway through the summer. I ended spending most of July in Starbucks, crunching through this Coursera course and trying to get my body back into shape after missing the gym throughout COVID. There were also lots of personal circumstances I was dealing with, but that's a lot to put on a personal blog attached to my name. Back to the fitness, Anytime was great and convenient, but I eventually switched to OrangeTheory (OTF). OTF has been great thus far, pricier but they push me to where I'd like to be. Over the course of this month I'll be finishing up the Coursera course learning JavaScript, maybe sign-up for a pottery course, draft some outlines and activities for next year and seek out backup teaching opportunities should things not fall through. See you next entry! </div> 
+
+	
+
+
+	<br><br>
+
+	<div id="wk4end">
+
+	<a href="week4index.html" id="link3">
+	Back to Week 4 entry 
+	</a>
+
+	<br><br>
+
+
+	<a href="page2.html" id="link3">
+	Back to list of entries
+	</a>
+
+	<br><br>
+
+	<a href="index.html" id="link4">
+	Back to main page
+	</a>
+
+	</div>
+
+
+</div>
+	
+			
+
+
+
+
+</div> <!-- end of main content-->
+
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+		<!-- ^ refer to these scripts for Javascript (behaviour) classes, as I'm writing this, I haven't yet learned js. Referenced in this order for the same reasons as above with the style sheets. -->
+
+		<!-- Note to self: WHY IS THE REFERENCE TO JS WRITTEN IN THE BODY RATHER THAN THE HEAD? Google it or ask someone later -->  
+
+
+<footer class="panel-footer">
+	<div class="container">
+		<div class="row">
+			<section id="hours" class="col-sm-4">
+				<span>Hours:</span><br>
+				Varies Daily<br>
+				Depends on the Season<br>
+				Definitely not early in the morning
+				<hr class="visible-xs">
+			</section>
+
+			<section id="address" class="col-sm-4">
+				<span>Address:</span><br>
+				Calgary, Alberta<br>
+				Canada<br>
+				<p>*Often found typing away in a coffee shop.</p>
+				<hr class="visible-xs">
+			</section>
+
+			<section id="testimonials" class="col-sm-4">
+				<p>"10/10 would hire back."</p>
+				<p>"This man is a living legend."</p>
+				<hr class="visible-xs">
+			</section>			
+		</div>
+		<div class="text-center">&copy; Copyright Nothing-Of-Substance 2021</div>
+	</div>
+</footer>
+
+<!-- comment -->
+
+
+</body>
